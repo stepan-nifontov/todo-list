@@ -1,0 +1,15 @@
+<form class="todo-form" [formGroup]="todoForm" (ngSubmit)="onSubmit(todoForm.value)">
+  <div class="todo-form__row">
+    <input formControlName="title" class="todo-form__control" type="text" placeholder="task name">
+  </div>
+
+  <div class="todo-form__row">
+    <textarea formControlName="description" class="todo-form__control" type="text" placeholder="Task description"></textarea>
+  </div>
+
+  <button class="todo-form__button" type="submit" [disabled]="todoForm.invalid">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" />
+    </svg>
+  </button>
+</form>

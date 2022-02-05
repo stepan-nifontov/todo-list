@@ -1,0 +1,25 @@
+<div class="todo-layout">
+  <div class="todo-layout__wrapper">
+    <header class="todo-layout__header">
+      <h1 class="todo-layout__title">TODO LIST</h1>
+    </header>
+    <div class="todo-layout__body">
+      <todo-form class="todo-layout__form">
+        <div class="todo-form__row">
+          <input class="todo-form__control" type="text" placeholder="task name">
+        </div>
+  
+        <div class="todo-form__row"> 
+          <textarea class="todo-form__control" type="text" placeholder="Task description"></textarea>
+        </div>
+  
+        <button class="todo-form__button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"/>
+            </svg>          
+        </button>
+      </todo-form>
+      <todo-list class="todo-layout__list"></todo-list>
+    </div>
+  </div>
+</div>

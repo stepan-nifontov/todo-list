@@ -1,0 +1,7 @@
+
+<div *ngIf="tasks.length; else emptyBlock" class="todo-list">
+  <todo-item class="todo-list__item" *ngFor="let task of tasks" [task]="task">
+  </todo-item>
+</div>
+
+<ng-template #emptyBlock>  please add task</ng-template>

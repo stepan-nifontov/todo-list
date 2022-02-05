@@ -1,0 +1,13 @@
+<div *ngIf="task" class="todo-item" [ngClass]="{'todo-item_completed' : task.isCompleted}">
+  <h3 class="todo-item__title">
+    {{task.title}}
+  </h3>
+  <p class="todo-item__description">
+    {{task.description}}
+  </p>
+
+  <div class="todo-item__footer">
+    <button class="todo-item__button" (click)="completeTask(task.id)" [disabled]="task.isCompleted" >Complete</button>
+    <button class="todo-item__button" (click)="delete(task.id)">Delete</button>
+  </div>
+</div>
