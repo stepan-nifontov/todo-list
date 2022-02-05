@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('./assets/styles/_vars.scss');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+input, textarea {
+  padding: var(--space_8) var(--space_16);
+  font-size: 1rem;
+  line-height: 1.375rem;
+
+  &::placeholder {
+    font-size: 0.8125rem;
+    color: var(--primary_text);
+  }
+
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  display: block;
+  border: none;
+}
